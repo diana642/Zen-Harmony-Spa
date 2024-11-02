@@ -1,0 +1,216 @@
+:root {
+    --color-fondo: #f4e1c1;
+    --color-texto: #4e3b31;
+    --color-acento: #d6b900;
+    --color-secundario: #ffffff;
+    --color-header-footer: #7e5b3a;
+    --color-nav: #c8a93a;
+}
+
+body {
+    font-family: 'Palanquin', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+    color: #ffffff; 
+}
+
+header, footer {
+    background-color: var(--color-header-footer);
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: var(--color-nav);
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: 2em auto;
+    background-color: var(--color-secundario);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: var(--color-secundario);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: var(--color-acento);
+    color: var(--color-secundario);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+footer p {
+    margin: 0;
+    color: var(--color-secundario);
+}
+
+h1::before, h1::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("Imagenes/IconBlanco.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 0 0.5em;
+}
+
+.titulo-cafe {
+    color: #3e444b; 
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 2em auto;
+    padding-left: 20px;
+    border-left: 3px solid #7c5c3c; 
+}
+
+.timeline-event {
+    position: relative;
+    padding: 1.5em 0;
+    padding-left: 40px;
+    margin-bottom: 1em;
+}
+
+.timeline-event::before {
+    content: "";
+    position: absolute;
+    top: 1.5em;
+    left: -7px;
+    width: 20px;
+    height: 20px;
+    background-color: #7c5c3c; 
+    border: 3px solid #7c5c3c;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #7c5c3c; 
+    font-size: 1.1em;
+}
+
+.timeline-event h2 {
+    font-family: 'DM Serif Display', serif;
+    color: #7c5c3c; 
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.timeline-event p {
+    font-family: 'Palanquin', sans-serif;
+    color: #3e444b;
+    font-size: 1em;
+}
+
+.eventos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; 
+    justify-content: center; 
+}
+
+.evento {
+    background-color: var(--color-secundario);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px; 
+    flex: 1 1 300px; 
+}
+
+.evento img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+.evento p {
+    font-family: 'Palanquin', sans-serif;
+    color: var(--color-texto);
+    margin-top: 0.5em;
+}
+
+.agenda-form {
+    background-color: var(--color-secundario);
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--color-texto);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid var(--color-texto);
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    padding: 0.75em 1.5em;
+    background-color: var(--color-acento);
+    color: var(--color-secundario);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d0a900; 
+}
